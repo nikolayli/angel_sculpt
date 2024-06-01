@@ -2,15 +2,13 @@
   "name": "angel_sculpt",
   "version": "0.0.1",
   "description": "A WebGL digital sculpting app",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron .",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nikolayli/angel_sculpt.git"
-  },
+  "repository": "git+https://github.com/nikolayli/angel_sculpt.git",
   "author": "Nikolay Andreev",
   "license": "MIT",
   "bugs": {
@@ -18,9 +16,11 @@
   },
   "homepage": "https://github.com/nikolayli/angel_sculpt#readme",
   "dependencies": {
+    "electron": "^30.0.8",
     "three": "^0.164.1"
   },
   "devDependencies": {
-    "electron": "^30.0.8"
+    "@types/node": "^20.12.13",
+    "@types/three": "^0.164.1"
   }
 }
